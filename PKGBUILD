@@ -3,12 +3,13 @@
 _pkgname=ip2geotools
 pkgname=python-${_pkgname}
 pkgver=0.1.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple tool for getting geolocation information on given IP address from various geolocation databases.'
 url='https://pypi.org/project/ip2geotools'
-arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h' 'aarch64')
+arch=('any')
 license=('MIT')
-depends=('python')
+depends=('python-dicttoxml' 'python-geocoder' 'python-geoip2' 'python-IP2Location' 'python-pyquery' 'python-requests'
+         'python-selenium')
 makedepends=('python-setuptools' 'python-pip')
 checkdepends=('python-pytest' 'python-pytest-runner' 'python-pytest-mock' 'python-pytest-timeout' 'python-wheel')
 source=("https://github.com/tomas-net/ip2geotools/archive/${pkgver}.tar.gz")
